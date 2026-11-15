@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOU vs MUSTAFA</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;background:#080d18;color:white;
+ font-family:Arial,sans-serif;text-align:center;
+}
+header{padding:25px 12px;background:#111c30}
+h1{color:#54d9ff;font-size:30px}
+main{padding:20px;max-width:600px;margin:auto}
+.card{
+ background:#17243a;border:1px solid #344866;
+ border-radius:16px;padding:20px;margin:16px 0;
+}
+button{
+ background:#1679d2;color:white;border:0;
+ padding:14px 20px;border-radius:12px;
+ font-size:17px;margin:7px;cursor:pointer;
+}
+button:disabled{opacity:.5}
+input{
+ padding:14px;border-radius:10px;
+ width:90%;font-size:17px;margin:10px;
+}
+#story{line-height:2;font-size:18px}
+.small{color:#a9bdd6}
+</style>
+</head>
+<body>
+<header>
+<h1>YOU vs MUSTAFA</h1>
+<p>🎬 یاریی نهێنییەکانی 3D</p>
+</header>
+<main>
+<div class="card">
+<h2>🔍 نهێنیی مۆزەخانە</h2>
+<p>دوو لێکۆڵەر، سێ گومانلێکراو، یەک نهێنی!</p>
+<p class="small">وەشانی تاقیکردنەوەی یارییەکە</p>
+</div>
+<div class="card">
+<h2>🎭 چیرۆک</h2>
+<p id="story">
+کاتژمێر ٨ی شەوە. بەردێکی گرانبەها لە مۆزەخانە ون بووە.
+سێ کەس لەوێ بوون. ئەرکی ئێوە دۆزینەوەی ڕاستییەکەیە.
+</p>
+</div>
+<div class="card">
+<h2>👥 گومانلێکراوەکان</h2>
+<p>ئارام — پاسەوان</p>
+<p>سۆران — کارمەند</p>
+<p>دانا — بەڕێوەبەر</p>
+</div>
+<div class="card">
+<h2>🏆 هەڵبژاردنی تۆ</h2>
+<button onclick="choose('ئارام')">ئارام</button>
+<button onclick="choose('سۆران')">سۆران</button>
+<button onclick="choose('دانا')">دانا</button>
+<p id="result">وەڵامەکەت هەڵبژێرە!</p>
+</div>
+</main>
+<script>
+function choose(name){
+ let result=document.getElementById("result");
+ if(name==="ئارام"){
+ result.innerText="🎉 ئافەرین! وەڵامی دروستت دۆزییەوە!";
+ }else{
+ result.innerText="هێشتا ڕاستت نەدۆزیوەتەوە! دووبارە بیر بکەرەوە.";
+ }
+}
+</script>
+</body>
+</html>
